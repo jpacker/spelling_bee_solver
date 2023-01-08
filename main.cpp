@@ -68,9 +68,10 @@ int main()
 	//	centerLetter = centerLetterInput[0];
 	//}
 
-	const auto start = std::chrono::high_resolution_clock::now();
+	
 	auto wordList = LoadWordList("words_alpha_len_4_greater.txt");
 	
+	const auto start = std::chrono::high_resolution_clock::now();
 	std::string allSet;
 	CharacterSet(allSet, allLetters);
 	std::erase_if(wordList, [centerLetter](const std::string& word)

@@ -1,11 +1,11 @@
 import time
 
 wordList = []
-start = time.perf_counter()
+
 with open("words_alpha_len_4_greater.txt", encoding='utf-8') as f:
     wordList = f.read().split()
 
-
+start = time.perf_counter()
 
 allLetters = set('acdijlu')
 wordList = filter(lambda s: 'a' in s, wordList)
