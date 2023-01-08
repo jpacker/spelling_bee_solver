@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+*.pdb
+
+#folders
+obj/
+.vs/
+x64/
+
+#visual studio files
+*.vcxproj.user
